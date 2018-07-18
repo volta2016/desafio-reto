@@ -1,0 +1,39 @@
+body {
+	background: mediumpurple;
+	min-height: 100vh; /* viewport-height - viewport-with  */
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+
+}
+
+h2 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+header {
+	height: 50px;
+	background: lavender;
+
+}
+
+section {
+	background: moccasin;
+	flex: 1;
+
+}
+
+footer {
+	background: lawngreen;
+	/* height: 100px; */
+/* 	position: absolute;
+	bottom: 0;
+	left: 0; */
+	/* right: 0; */
+  /*   width: 100%; */
+
+}
