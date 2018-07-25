@@ -1,0 +1,41 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	
+	font-size: 14px;
+	margin: 0; 
+}
+
+.header, .content, .footer {
+	margin: 0px;
+	padding: 0px;
+	min-width: 100vmax;
+	
+}
+
+.header {
+	background: rgb(144, 17, 224, 0.17);
+	display: flex;
+	justify-content: center;
+
+}
+
+.content {
+	background: #6ed4e466;
+	flex: 1;
+	margin: 5px 10px 15px 5px;
+}
+
+.content p {
+	margin: 5px;
+}
+
+.footer {
+	background: #b697f5;
+    display: flex;
+	justify-content: center;
+	height: 100%;
+
+}
