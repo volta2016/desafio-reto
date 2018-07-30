@@ -1,0 +1,106 @@
+body {
+	background-color: #7F7F7F;
+	color: #FFFFFF;
+	font-family: Arial;
+	margin: 0;
+	padding-bottom: 200px;
+}
+
+.caja {
+	width: 200px;
+	border: 1px solid #7380FF;
+	margin-bottom: 50px;
+}
+
+.tipo-a {
+	margin: 0 auto;
+
+}
+
+.tipo-b {
+	margin-left: calc(100vw / 2 - 100px);
+}
+
+.tipo-c {
+	border: solid 1px #7380FF;
+	padding: 10px;
+	text-align: center;
+}
+
+.tipo-c .caja {
+	display: inline-block;
+	text-align: left;
+
+}
+
+.relative {
+	position: relative;
+	border: 1px solid #7380FF;
+	height: 400px;
+}
+ 
+.tipo-d {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.tipo-e {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.tipo-f {
+	display: flex;
+	justify-content: center;
+}
+
+.tipo-g {
+	display: table;
+	width: 100%;
+	height: 500px;
+}
+
+.tipo-g .caja {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.height {
+	height: 500px;
+	background: #5D2B4F;
+}
+
+
+.tipo-h {
+	height: 500px;
+	box-sizing: border-box;
+	padding-top: 150px;
+}
+
+
+.tipo-i {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+.tipo-j {
+	line-height: 500px;
+	text-align: center;
+}
+
+/* .tipo-k > * {
+	display: inline;
+	vertical-align: middle;
+} */
+
+.tipo-k  {
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+}

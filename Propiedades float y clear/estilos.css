@@ -1,0 +1,112 @@
+
+.container {
+	overflow: hidden;
+	/* clear: both; */
+}
+
+
+h2 {
+	color: mediumpurple;
+}
+
+img.right {
+
+	float: right ;
+	margin-left: 15px;
+	border: 2px solid crimson;
+}
+
+img.left{
+
+	float: left ;
+	margin-right: 15px;
+	border: 2px solid crimson;
+}
+
+img.none {
+
+	float: none ;
+	margin-right: 15px;
+	border: 2px solid crimson;
+}
+
+
+.contenedor {
+	background-color:#666666;
+	margin:0 auto;
+	padding:10px;
+	width:900px;
+	overflow: hidden;
+}
+
+.caja1, .caja2 {
+	height:400px;
+	width:400px;
+}
+
+.caja1 {
+	background-color:plum;
+	float:left;
+}
+
+.caja2 {
+	background-color:#A9ED86;
+	float:right;
+}
+
+
+.contenedor-2 {
+	background-color:#666666;
+	margin:0 auto;
+	padding:10px;
+	width:960px;
+}
+.contenido {
+	background-color:#FE9B9B;
+	float:left;
+	height:600px;
+	width:650px;
+}
+.barra {
+	background-color:#A9ED86;
+	float:right;
+	height:600px;
+	width:310px;
+}
+.pie {
+	background-color:#FEF6B2;
+	clear:both;
+	height:120px;
+}
+
+
+/* Pero vemos que el contenedor de atras no luce tan bien, y es porque 
+float hace que los elementos floten y pierden su altura, en consecuencia el
+.contenedor tambien pierde la altura, para solucionar esto podemos definir una 
+altura predeterminada para el contenedor (el inconveniente es que al definir una
+altura predeterminada esta es estática si hay mas elementos no va a aumentar 
+por si sola) o podemos usar un div con la propiedad clear: both; que lo que
+hara es ‘limpiar’ ambos lados (left/right). */
+
+/* Sintaxis formal
+none | left | right | both | inline-start | inline-end
+
+none
+Es un keyword que indica que el elemento no es movido hacia abajo para limpiar elementos flotantes anteriores.
+left
+Es un keyword que indica que el elemento es movido hacia abajo para limpiar elementos flotantes a la izquierda.
+right
+Es un keyword que indica que el elemento es movido hacia abajo para limpiar elementos flotantes a la derecha.
+both
+Es un keyword que indica que el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.
+inline-start 
+Es un keyword que indica que el elemento es movido hacia abajo para limpiar elementos flotantes al inicio del 
+bloque contenedor, estos son los elementos con valor float left en scripts ltr 
+(left to right) y elementos con valor float right en scripts rtl (right to left).
+inline-end 
+Es un keyword que indica que el elemento es movido hacia abajo para limpiar floats al 
+final del bloque contenedor, estos son los elementos con valor float right en scripts 
+ltr (left to right) y elementos con valor float left  en scripts rtl (right to left) */.
+
+
+

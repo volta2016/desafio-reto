@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow property</title>
+	<style>
+		
+
+
+div.ex1 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+}
+
+div.ex2 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+}
+
+div.ex3 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: auto;
+}
+
+div.ex4 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: visible;
+    margin-bottom: 110px;
+}
+
+div.ex5 {
+    background-color: purple;
+    width: 110px;
+    height: 110px;
+    overflow-x:  hidden;
+   /*  overflow-y:  hidden; */
+}
+	</style>
+
+</head>
+<body>
+
+	<h1>overflow propiedad</h1>
+	<p>La propiedad CSS overflow  especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.<br>
+    Valor inicial	visible
+	</p>
+
+	<p>Usando la propiedad overflow con un valor distinto a visible, valor por defecto, creará un nuevo contexto de formatos de bloques. Esto es técnicamente necesario debido a que si un elemento flotante interceptara con otros forzaría a reajustar el contenido alrededor de los elementos que se interceden. El reajuste sucedería luego de cada desplazamiento, y llevaría a un desplazamiento demasiado lento.</p>
+
+	<h1>Sintaxis</h1>
+
+	<p>Sintáxis formal: visible | hidden | scroll | auto</p>
+
+	<p>overflow: visible
+	overflow: hidden
+	overflow: scroll
+	overflow: auto
+
+	overflow: inherit</p>
+
+	<p><strong>visible:</strong>Valor por defecto. El contenido no es recortado, podría ser dibujado fuera de la caja contenedora.</p>
+
+	<p><strong>hidden:</strong>El contenido es recortado y no se muestran barras de posición.</p>
+
+	<p><strong>scroll:</strong>El contenido es recortado y el navegador web usa las barras de desplazamiento, sea se haya recortado contenido, o no. Esto previene cualquier problema con las barras de desplazamiento apareciendo o desapareciendo en un entorno dinámico. Puede que las impresoras impriman contenido excedente.</p>
+
+	<p><strong>auto:</strong>Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de desplazamiento si hay contenido excedente.</p>
+
+
+<h2>overflow: scroll:</h2>
+	<div class="ex1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>overflow: hidden:</h2>
+	<div class="ex2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>overflow: auto:</h2>
+	<div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>overflow: visible (default):</h2>
+	<div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+<h2>overflow: visible (default):</h2>
+	<div class="ex5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>	
+
+
+<!-- /* El contenido no es recortado */
+overflow-y: visible;
+
+/* El contenido es recortado sin mostrar barra scroll */
+overflow-y: hidden;
+
+/* El contenido es recordado, mostrando barra scroll */
+overflow-y: scroll;
+
+/* Deja al navegador decidir */
+overflow-y: auto;
+
+overflow-y: inherit; -->
+
+
+	
+</body>
+</html>
